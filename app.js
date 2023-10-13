@@ -1,9 +1,9 @@
 const express = require("express");
 const app = express();
-const PORT = process.env.PORT || 4000;
-const server = app.listen(PORT, () => console.log("How are you doing"));
 const path = require("path");
 const socketsConected = new Set();
+const server = app.listen(PORT, () => console.log("How are you doing")); // Define server before using it in socket.io
+
 const io = require("socket.io")(server);
 
 let waitingUsers = [];
@@ -53,3 +53,6 @@ function removeUserFromChatRoom(socket) {
 }
 
 app.use(express.static(path.join(__dirname, 'public')));
+
+const PORT = process.env.PORT || 4000; // Define PORT before using it
+
