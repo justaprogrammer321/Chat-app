@@ -1,4 +1,4 @@
-const io = require('socket.io-client');
+import io from 'socket.io-client';
 const socket = io();
 const messageContainer = document.getElementById('message-container');
 const nameInput = document.getElementById('name-input');
