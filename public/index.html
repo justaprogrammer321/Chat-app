@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chatapp</h1>
+
+    <div class="room-list">
+        <h2>Available Rooms</h2>
+        <a class="room-link" href="#Room1">Room 1</a>
+        <a class="room-link" href="#Room2">Room 2</a>
+        <a class="room-link" href="#Room3">Room 3</a>
+        <!-- Add more rooms as needed -->
+    </div>
+    <div class="Room-Joinleave">
+        <input type="text" id="room-input" placeholder="Enter Room Name">
+        <button id="join-queue-button">Join Room</button>
+        <button  utton id="leave-room-button">Leave Room</button>
+    </div>
+    <div class="main">
+        <div class="name">
+            <span></span>
+            <input type="text" id="name-input" class="name-input" value="anonymous" maxlength="20">
+        </div>
+        <ul class="message-container" id="message-container">
+            <li class="message-left">
+            </li>
+
+            <li class="message-right">
+            </li>
+
+            <li class="message-feedback">
+                <p class="feedback" id="feedback">
+                    Killer is typing
+                </p>
+            </li>
+        </ul>
+
+        <form class="message-form" id="message-form">
+            <input type="text" name="message" id="message-input" class="message-input">
+            <button type="submit" class="send-button">Send</button>
+        </form>
+
+    </div>
+    <h3 class="clients-total" id="client-total">Total-clients:1</h3>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

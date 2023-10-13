@@ -1,0 +1,102 @@
+/* Apply basic styling to the chat container */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+.Room-Joinleave{
+    padding: 0.2rem;
+}
+h1 {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the chat messages */
+.message-container {
+    list-style: none;
+    padding: 0;
+}
+
+.message {
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.message-left {
+    text-align: left;
+}
+
+.message-right {
+    text-align: right;
+}
+
+/* Style the form and input fields */
+.message-form {
+    display: flex;
+    margin-top: 10px;
+}
+
+.message-input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.send-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* Style the room input and buttons */
+#room-input {
+    width: 150px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#join-queue-button, #leave-room-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* Style the client total display */
+.clients-total {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Style system messages */
+.message-system {
+    text-align: center;
+    font-style: italic;
+    color: #777;
+}
+
