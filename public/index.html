@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
+    <script src={`https://${process.env.VERCEL_URL}/socket.io/socket.io.js`}></script>
 </head>
 <body>
     <h1>Chatapp</h1>
@@ -49,7 +50,6 @@
     </div>
     <h3 class="clients-total" id="client-total">Total-clients:1</h3>
 
-    <script src= "https://cdn.socket.io/4.2.0/socket.io.min.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
